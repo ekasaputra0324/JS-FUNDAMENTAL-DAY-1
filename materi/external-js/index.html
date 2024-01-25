@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUNDAMENTAL JAVASCRIPT</title>
+</head>
+<body>
+    <button id="alert" onclick="btnAlert()" >TOMBOL</button>
+    <script>
+        let index = 0;
+        let btn =  document.getElementById('alert').textContent = 'TOMBOL : ' + index
+        function btnAlert(){
+            let countIndex = index += 1
+            console.log(countIndex);
+            document.getElementById('alert').textContent = 'TOMBOL : ' + countIndex
+        }
+    </script>
+</body>
+</html>
